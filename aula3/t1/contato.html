@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Contato</title>
+      <link href="bootstrap-5.0.2/css/bootstrap.css" rel="stylesheet" >
+      <script src="bootstrap-5.0.2/js/bootstrap.js"></script>
+   </head>
+   <body>
+
+      <div class="container">
+
+         <section class="row justify-content-md-center">
+         <h2 style="text-align: center;" class="pt-4">Contato</h2>
+         <form class="col col-md-12 col-md-9 col-lg-8 p-4"  action="enviar-email.php" method="post" style="border: 2px dotted rgba(169,169,169,0.5);">
+
+            <div class="row mb-4 mt-4">
+
+               <div class="col-md-1 col-form-label" style="border: 0px solid red;">
+                  <label for="name" class="form-label">Nome:</label>
+                </div>
+                <div class="col col-sm-5">
+                  <input name="name" type="text" class="form-control" id="name" required>
+                </div>
+
+
+               <div class="col-md-1 col-form-label" style="border: 0px solid red;">
+                  <label for="email" class="form-label">Email:</label>
+                </div>
+                <div class="col col-sm-5">
+                  <input name="email" type="email" class="form-control" id="email" required>
+                </div>
+
+            </div>
+
+            <div class="mb-3">
+               <label for="exampleFormControlTextarea1" class="form-label">Deixe sua mensagem</label>
+               <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+             </div>
+
+            <input type="submit" value="Enviar" class="btn btn-outline-primary">
+
+
+         </form>
+      </section>
+
+      </div>
+
+
+      <div style="margin: 32px;">
+         <a href="index.html"  >Retornar para o perfil</a>
+
+      </div>
+
+   </body>
+</html>
